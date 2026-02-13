@@ -1,100 +1,100 @@
-# Project Overview
+# プロジェクト概要
 
-This is a Japanese company information search application that allows users to search for company names and retrieve their securities codes, corporate numbers (法人番号), and EDINET codes.
+これは日本企業情報検索アプリケーションで、企業名を検索し、証券コード、法人番号、EDINETコードを取得することができます。
 
-## Purpose
+## 目的
 
-A practice repository for Claude Code Desktop that provides a simple web-based tool to look up Japanese company information and access relevant external resources:
-- **Securities Code**: Links to Yahoo! Finance for stock price information
-- **Corporate Number**: Links to National Tax Agency's corporate number database
-- **EDINET Code**: Links to Financial Services Agency's EDINET for securities reports
+Claude Code Desktopの練習用リポジトリとして、日本企業情報を検索し、関連する外部リソースにアクセスするためのシンプルなWebベースツールを提供します：
+- **証券コード**: Yahoo! ファイナンスへのリンクで株価情報を表示
+- **法人番号**: 国税庁の法人番号公表サイトへのリンク
+- **EDINETコード**: 金融庁のEDINETへのリンクで有価証券報告書を閲覧
 
-## Project Structure
+## プロジェクト構成
 
 ```
 claudecode-practice/
-├── index.html          # Main HTML file with search interface
+├── index.html          # 検索インターフェースを含むメインHTMLファイル
 ├── css/
-│   └── style.css      # Styling for the application
+│   └── style.css      # アプリケーションのスタイリング
 ├── js/
-│   ├── data.js        # Company data storage
-│   └── app.js         # Application logic and event handlers
-├── LICENSE            # Project license
-└── README.md          # Basic project description
+│   ├── data.js        # 企業データの保存
+│   └── app.js         # アプリケーションロジックとイベントハンドラー
+├── LICENSE            # プロジェクトライセンス
+└── README.md          # 基本的なプロジェクト説明
 ```
 
-## Technology Stack
+## 技術スタック
 
-- **HTML5**: Semantic markup for the search interface
-- **CSS3**: Styling and responsive design
-- **Vanilla JavaScript**: No frameworks, pure JavaScript for functionality
+- **HTML5**: 検索インターフェースのためのセマンティックマークアップ
+- **CSS3**: スタイリングとレスポンシブデザイン
+- **Vanilla JavaScript**: フレームワークなし、純粋なJavaScriptで機能を実装
 
-## Features
+## 機能
 
-1. **Company Search**: Text input with search functionality
-2. **Auto-suggestions**: Displays suggestions as user types
-3. **Search Results Display**: Shows company information with clickable links
-4. **External Integration**: Direct links to:
-   - Yahoo! Finance (株価情報)
-   - National Tax Agency Corporate Number Site (法人番号公表サイト)
+1. **企業検索**: テキスト入力による検索機能
+2. **自動サジェスト**: ユーザーが入力するとサジェストを表示
+3. **検索結果表示**: クリック可能なリンク付きで企業情報を表示
+4. **外部連携**: 以下への直接リンク:
+   - Yahoo! ファイナンス (株価情報)
+   - 国税庁法人番号公表サイト (法人番号公表サイト)
    - EDINET (有価証券報告書)
 
-## How to Use
+## 使い方
 
-1. Open `index.html` in a web browser
-2. Enter a company name in Japanese (e.g., トヨタ, ソニー)
-3. Click the search button or press Enter
-4. View results with links to external information sources
+1. Webブラウザで `index.html` を開く
+2. 日本語で企業名を入力 (例: トヨタ、ソニー)
+3. 検索ボタンをクリックするか、Enterキーを押す
+4. 外部情報ソースへのリンク付きの結果を表示
 
-## Development Notes
+## 開発上の注意事項
 
-- This is a static web application with no backend server required
-- Company data is stored in `js/data.js`
-- All text and UI are in Japanese
-- The application is designed for Japanese companies listed on stock exchanges
+- これはバックエンドサーバーが不要な静的Webアプリケーションです
+- 企業データは `js/data.js` に保存されています
+- すべてのテキストとUIは日本語です
+- このアプリケーションは、証券取引所に上場している日本企業向けに設計されています
 
-## File Descriptions
+## ファイル説明
 
 ### index.html
-Main entry point containing:
-- Search input field
-- Search button
-- Results container
-- Suggestions dropdown
-- Footer with link descriptions
+以下を含むメインエントリーポイント:
+- 検索入力フィールド
+- 検索ボタン
+- 結果表示コンテナ
+- サジェストドロップダウン
+- リンクの説明を含むフッター
 
 ### css/style.css
-Contains all styling for:
-- Layout and responsive design
-- Search box styling
-- Results display formatting
-- Suggestion dropdown appearance
+以下のすべてのスタイリングを含む:
+- レイアウトとレスポンシブデザイン
+- 検索ボックスのスタイリング
+- 結果表示のフォーマット
+- サジェストドロップダウンの外観
 
 ### js/data.js
-Data storage file containing:
-- Company information array/object
-- Securities codes
-- Corporate numbers
-- EDINET codes
+以下を含むデータストレージファイル:
+- 企業情報の配列/オブジェクト
+- 証券コード
+- 法人番号
+- EDINETコード
 
 ### js/app.js
-Application logic including:
-- Search functionality
-- Auto-suggestion system
-- Results rendering
-- Event handlers
-- External link generation
+以下を含むアプリケーションロジック:
+- 検索機能
+- 自動サジェストシステム
+- 結果のレンダリング
+- イベントハンドラー
+- 外部リンクの生成
 
-## Future Enhancement Ideas
+## 今後の改善アイデア
 
-- Add more company data
-- Implement fuzzy search
-- Add English language support
-- Include company logos
-- Add filtering by industry
-- Implement local storage for search history
-- Add dark mode support
+- 企業データの追加
+- あいまい検索の実装
+- 英語対応の追加
+- 企業ロゴの表示
+- 業種別フィルタリングの追加
+- 検索履歴のローカルストレージへの保存
+- ダークモードサポートの追加
 
-## License
+## ライセンス
 
-See LICENSE file for details.
+詳細はLICENSEファイルを参照してください。
